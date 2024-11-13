@@ -1,0 +1,61 @@
+Understanding Binary and Hexadecimal
+=============================================================================
+Decimal can represent 10 values = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Binary can represent 2 values = [0, 1]
+
+=============================================================================
+Multiple Characters in Decimal
+1 char in decimal allows u to count 0 - 9, in this range u can represent 10 unique values.
+2 chars [00 - 99]   -> can represent 100 unique values.
+3 chars [000 - 999] -> can represent 1000 unique values.
+
+the argument above, create pattern: 10 ** n where n is the numbers of characters.
+=============================================================================
+
+=============================================================================
+Multiple Characters in Binary
+1 char in binary allows u to count 0 - 1, in this range u can represent 2 unique values.
+2 chars [00, 01, 10, 11] -> can represent 4 unique values.
+3 chars [000, 001, 010, 011, 100, 101, 110, 111] -> can represent 8 unique values.
+
+the argument above, create pattern: 2 ** n, n is the numbers of characters.
+=============================================================================
+
+=============================================================================
+Bits, Nibbles, Bytes
+Bit     -> single char in binary    -> [0] [1].
+Nibble  -> 4 bits together          -> [1010] [1101].
+Byte    -> 8 bits together          -> [1101 1011] [1001 1010].
+=============================================================================
+
+=============================================================================
+Magnitudes
+it is common th nam larger numbers in decimal:
+- 1.000         -> a thousand.
+- 1.000.000     -> a million.
+- 1.000.000.000 -> a billion.
+
+in Binary, also names for large magnitudes:
+- 1024 bits [2 ** 10]   -> kilobit.
+- 1024 kilobits         -> megabit.
+- 1024 megabits         -> gigabit.
+- 1024 bytes [1024 * 8 = 8192]  -> kilobyte.
+- 1024 kilobyte                 -> megabyte.
+- 1024 megabyte                 -> gigabyte.
+=============================================================================
+
+=============================================================================
+- Hexadecimal is traditionally used to represent raw data.
+- Hexadecimal gets its name from the fact that is uses 16 symbols: [0 - 9] and [a - f].
+- The decimal values for a - f are 10 - 15. Hexadecimal dips into alphabetical chars in order to have 16 symbols.
+- The chars in hexadecimal are case-insensitive, they can be either uppercase or lowercase. 
+- Typically, a string of hexadecimal chars is denoted with prefix [0x]. example: 0x4fd979de3edf0f56aa9716b898ec8.
+
+how to convert binary to hexadecimal? 
+since chars in hexadecimal can represent 16 values, it essentially maps to a nibble[4 bits].
+example : binary -> 11110100110110010111 -> [1111],  [0100],  [1101],  [1001],  [0111]
+                                            F     ,  4     ,  D     ,  9     ,  7
+          hexadecimal: 0xf4d97 
+
+it is much easier to type with hexadecimal than binary, so u could see why hexadecimal maybe preferable to the binary format!
+
